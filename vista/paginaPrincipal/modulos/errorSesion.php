@@ -1,0 +1,3 @@
+<?php
+
+echo "inicie session";

@@ -1,0 +1,13 @@
+Options All
+
+RewriteEngine On 
+RewriteRule ^mostrarProductos$ vista/paginaProductor/modulos/listarProductos.php [L]
+RewriteRule ^subirProductos$ vista/paginaProductor/modulos/subirProductos.php [L]
+RewriteRule ^cerrar$ cerrarSesion.php [L]
+
+RewriteRule ^([-a-zA-Z0-9]+)$ index.php?ruta=$1 [L]
+
+
+
+
+

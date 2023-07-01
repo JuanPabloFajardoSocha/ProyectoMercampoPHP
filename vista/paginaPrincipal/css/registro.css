@@ -1,0 +1,203 @@
+* {
+  margin-top: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container-registrar_usuario {
+  margin-top: 0%;
+  margin-left: 15%;
+  width: 70%;
+  max-height: 100%;
+  height: 650px;
+  display: flex;
+  background: url("../imagenes/IMG2.jpg") no-repeat;
+}
+
+.login_form_container-registrar_usuario {
+  visibility: none;
+  position: relative;
+  width: 60%;
+  height: 600px;
+  max-width: 100%;
+  max-height: 100%;
+  background: #040717;
+  border-radius: 50px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; 
+  margin: 0 auto;
+  top: 3%;
+}
+
+.login_form_container-registrar_usuario::before {
+  position: absolute;
+  width: 270%;
+  height: 250%;
+  content: "";
+  background-image: conic-gradient(
+    transparent,
+    transparent,
+    transparent,
+    #20a7a3
+  );
+  animation: rotate_border 6s linear infinite;
+}
+
+.login_form_container-registrar_usuario::after {
+  position: absolute;
+  width: 250%;
+  height: 250%;
+  content: "";
+  background-image: conic-gradient(
+    transparent,
+    transparent,
+    transparent,
+    #f510e6
+  );
+  animation: rotate_border 6s linear infinite;
+  animation-delay: -3s;
+}
+
+@keyframes rotate_border {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.login_form_registrar_usuario {
+  position: absolute;
+  content: "";
+  background-color: #0c1022;
+  border-radius: 50px 5px;
+  inset: 5px;
+  padding: 50px 40px;
+  z-index: 10;
+  color: #00ccff;
+}
+
+select{
+  width: 240px;
+  height: 30px;
+  margin-top: 0px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  background-color: #0c1022;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #00ccff;
+  font-size: 15px;
+  color: #00ccff52;
+  letter-spacing: 1px;
+  padding-left: 5px; 
+  width: 250px; 
+}
+:disabled{
+  color:#00ccff52;
+  background-color: #0c1022;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.input_group {
+  margin-top: 40px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+
+
+.input_text {
+  width: 250px;
+  height: 30px;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #00ccff;
+  font-size: 15px;
+  padding-left: 5px;
+  color: #00ccff;
+  margin-top: 0px;
+  padding-left: 5px; 
+}
+.input_text2 {
+  width: 40%;
+  height: 30px;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #00ccff;
+  font-size: 15px;
+  padding-left: 5px;
+  color: #00ccff;
+  margin-left: 60px;
+  margin-top: px;
+  width: 250px;
+  padding-left: 5px; 
+}
+
+::placeholder {
+  font-size: 15px;
+  color: #00ccff52;
+  letter-spacing: 1px;
+}
+
+.fa {
+  font-size: 20px;
+}
+
+#login_button {
+  position: relative;
+  width: 300px;
+  height: 40px;
+  transition: 1s;
+  margin-top: 70px;
+}
+
+#registrarse_button a {
+  position: absolute;
+  width: 40%;
+  height: 43px;
+  text-decoration: none;
+  z-index: 10;
+  cursor: pointer;
+  font-size: 22px;
+  letter-spacing: 2px;
+  border: 1px solid #00ccff;
+  border-radius: 50px;
+  background-color: #0c1022;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left:25%;
+  margin-top: 50px;
+}
+
+.fotter {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.fotter a {
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.glowIcon {
+  text-shadow: 0 0 10px #00ccff;
+}
